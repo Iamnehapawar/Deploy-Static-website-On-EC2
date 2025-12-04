@@ -31,7 +31,7 @@ resource "aws_security_group" "static-web-sg" {
   }
 }
 resource "aws_instance" "Myweb" {
-  ami           = "ami-02b8269d5e85954ef"
+  ami           = "ami-0e6a50b0059fd2cc3"
   instance_type = "t2.micro"
   key_name      = var.key_name
   user_data = file("data.sh")
